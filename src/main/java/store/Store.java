@@ -12,7 +12,15 @@ public class Store {
     // Please don't modify the signature of this method.
     public void updateValue() {
         for (Item item : items) {
-            foo(item);
+            if (item.name.equals("Aged Wine")) {
+                foo(item);
+            } else if (item.name.equals("Show Ticket")) {
+                foo(item);
+            } else if (item.name.equals("Sulfuras")) {
+                foo(item);
+            } else {
+                foo(item);
+            }
         }
     }
 
