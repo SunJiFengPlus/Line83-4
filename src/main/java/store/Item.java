@@ -20,4 +20,15 @@ public class Item {
     public String toString() {
         return this.name + ", " + this.sellIn + ", " + this.value;
     }
+
+    public static Item of(Item item) {
+        if (item.name.equals("Aged Wine")) {
+            return new AgedWine(item.sellIn, item.value);
+        } else if (item.name.equals("Show Ticket")) {
+            return new ShowTicket(item.sellIn, item.value);
+        } else if (item.name.equals("Sulfuras")) {
+            return new Sulfuras(item.sellIn, item.value);
+        }
+        return item;
+    }
 }

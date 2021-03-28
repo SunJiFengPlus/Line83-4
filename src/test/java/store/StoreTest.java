@@ -19,6 +19,6 @@ class StoreTest {
         Item[] items = new Item[]{new Item(name, sellIn, value)};
         Store store = new Store(items);
         store.updateValue();
-        return items[0];
+        return store.items.get(0);
     }
 }
