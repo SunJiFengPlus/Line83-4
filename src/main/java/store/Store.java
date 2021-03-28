@@ -49,15 +49,7 @@ public class Store {
                     }
                 }
             } else {
-                if (item.value > 0) {
-                    item.value = item.value - 1;
-                }
-                item.sellIn = item.sellIn - 1;
-                if (item.sellIn < 0) {
-                    if (item.value > 0) {
-                        item.value = item.value - 1;
-                    }
-                }
+                item.update();
             }
         }
     }
