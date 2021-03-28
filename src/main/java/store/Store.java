@@ -43,11 +43,7 @@ public class Store {
                     item.value = 0;
                 }
             } else if (item.name.equals("Sulfuras")) {
-                if (item.sellIn < 0) {
-                    if (item.value > 0) {
-                        item.value = item.value - 1;
-                    }
-                }
+                item.update();
             } else {
                 item.update();
             }
