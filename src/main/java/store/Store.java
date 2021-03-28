@@ -15,17 +15,7 @@ public class Store {
 
     // Please don't modify the signature of this method.
     public void updateValue() {
-        for (Item item : items) {
-            if (item.name.equals("Aged Wine")) {
-                item.update();
-            } else if (item.name.equals("Show Ticket")) {
-                item.update();
-            } else if (item.name.equals("Sulfuras")) {
-                item.update();
-            } else {
-                item.update();
-            }
-        }
+        items.forEach(Item::update);
     }
 
 }
