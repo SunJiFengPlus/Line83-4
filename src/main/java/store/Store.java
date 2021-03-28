@@ -17,13 +17,7 @@ public class Store {
     public void updateValue() {
         for (Item item : items) {
             if (item.name.equals("Aged Wine")) {
-                if (item.value < 50) {
-                    item.value = item.value + 1;
-                }
-                item.sellIn = item.sellIn - 1;
-                if (item.sellIn < 0) {
-                    item.value = item.value + 1;
-                }
+                item.update();
             } else if (item.name.equals("Show Ticket")) {
                 item.update();
             } else if (item.name.equals("Sulfuras")) {
