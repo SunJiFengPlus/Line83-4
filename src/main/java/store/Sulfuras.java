@@ -9,6 +9,9 @@ public class Sulfuras extends Item {
         super("Sulfuras", sellIn, value);
     }
 
+    /**
+     * 魔法锤（Sulfuras）是一种传奇商品，其销售剩余天数和品质值都不会变化。
+     */
     @Override
     public void update() {
         if (sellIn < 0) {

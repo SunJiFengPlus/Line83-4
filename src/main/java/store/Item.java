@@ -32,6 +32,10 @@ public class Item {
         return item;
     }
 
+    /**
+     * 每过一天，所有商品的SellIn值和Value值都减1。
+     * 一旦过了销售剩余天数，价值就以双倍的速度下滑。
+     */
     public void update() {
         if (value > 0) {
             value = value - 1;
