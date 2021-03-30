@@ -9,9 +9,9 @@ class StoreTest {
     void test() {
         CombinationApprovals.verifyAllCombinations(
                 this::update,
-                new String[]{"foo", "Aged Wine", "Show Ticket", "Sulfuras"},
+                new String[]{"foo", "Aged Wine", "Show Ticket", "Sulfuras", "Cure"},
                 new Integer[]{-1, 0, 1, 10, 11, 12},
-                new Integer[]{-1, 0, 1, 49, 50, 51}
+                new Integer[]{0, 1, 49, 50}
         );
     }
 
