@@ -28,6 +28,8 @@ public class Item {
             return new ShowTicket(item.sellIn, item.value);
         } else if (item.name.equals("Sulfuras")) {
             return new Sulfuras(item.sellIn, item.value);
+        } else if (item.name.equals("Cure")) {
+            return new Cure(item.sellIn, item.value);
         }
         return item;
     }
