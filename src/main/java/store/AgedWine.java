@@ -19,7 +19,9 @@ public class AgedWine extends Item {
         }
         sellIn = sellIn - 1;
         if (sellIn < 0) {
-            value = value + 1;
+            if (value < 50) {
+                value = value + 1;
+            }
         }
     }
 }
