@@ -8,6 +8,10 @@ public class Store {
     public Store(Item[] items) {
         this.items = items;
     }
+    
+    public static Store of(Item[] items) {
+        return new Store(items);
+    }
 
     // Please don't modify the signature of this method.
     public void updateValue() {

@@ -15,6 +15,10 @@ public class Item {
         this.sellIn = sellIn;
         this.value = value;
     }
+    
+    public static Item of(String name, int sellIn, int value) {
+        return new Item(name, sellIn, value);
+    }
 
     // Please don't modify the signature of this method.
     public String toString() {
