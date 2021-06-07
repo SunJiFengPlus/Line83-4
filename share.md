@@ -31,4 +31,11 @@
 > 使用覆盖度运行(Run With Coverage): command + R
 
 可以看到绿色部分是被100%覆盖的区域, 黄色部分是部分覆盖区域, 红色部分是未被覆盖区域<br>
-接下来的任务就添加参数, 让这些参数尽可能覆盖所有代码
+接下来的任务就添加参数, 让这些参数尽可能覆盖所有代码<br>
+如果无论如何调整参数都不能100%覆盖, 那恭喜你, 你发现了Dead Code, 放心的删除它吧<br>
+
+使用命令来认定当前的KV文件是正确的
+``` shell
+mv /Users/sftc/project/my-github/line83-4/4th_round_8f0d5e29ea48612ea1be0ab4537dc51f66d6610d/./src/test/java/store/StoreTest.test.received.txt /Users/sftc/project/my-github/line83-4/4th_round_8f0d5e29ea48612ea1be0ab4537dc51f66d6610d/./src/test/java/store/StoreTest.test.approved.txt
+```
+如果后面代码的改动导致形成的KV文件与刚刚确认文件有所不同, 那当前代码的改动**也许**就是错误的
