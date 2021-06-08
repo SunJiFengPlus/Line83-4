@@ -15,49 +15,48 @@ public class Store {
 
     // Please don't modify the signature of this method.
     public void updateValue() {
-        for (int i = 0; i < items.length; i++) {
-            if (!items[i].name.equals("Aged Wine")
-                    && !items[i].name.equals("Show Ticket")) {
-                if (items[i].value > 0) {
-                    if (!items[i].name.equals("Sulfuras")) {
-                        items[i].value = items[i].value - 1;
+        for (Item item : items) {
+            if (!item.name.equals("Aged Wine") && !item.name.equals("Show Ticket")) {
+                if (item.value > 0) {
+                    if (!item.name.equals("Sulfuras")) {
+                        item.value = item.value - 1;
                     }
                 }
             } else {
-                if (items[i].value < 50) {
-                    items[i].value = items[i].value + 1;
-
-                    if (items[i].name.equals("Show Ticket")) {
-                        if (items[i].sellIn < 11) {
-                            if (items[i].value < 50) {
-                                items[i].value = items[i].value + 1;
+                if (item.value < 50) {
+                    item.value = item.value + 1;
+                
+                    if (item.name.equals("Show Ticket")) {
+                        if (item.sellIn < 11) {
+                            if (item.value < 50) {
+                                item.value = item.value + 1;
                             }
                         }
-
-                        if (items[i].sellIn < 6) {
-                            if (items[i].value < 50) {
-                                items[i].value = items[i].value + 1;
+                    
+                        if (item.sellIn < 6) {
+                            if (item.value < 50) {
+                                item.value = item.value + 1;
                             }
                         }
                     }
                 }
             }
-
-            if (!items[i].name.equals("Sulfuras")) {
-                items[i].sellIn = items[i].sellIn - 1;
+        
+            if (!item.name.equals("Sulfuras")) {
+                item.sellIn = item.sellIn - 1;
             }
-
-            if (items[i].sellIn < 0) {
-                if (!items[i].name.equals("Aged Wine")) {
-                    if (!items[i].name.equals("Show Ticket")) {
-                        if (items[i].value > 0) {
-                            items[i].value = items[i].value - 1;
+        
+            if (item.sellIn < 0) {
+                if (!item.name.equals("Aged Wine")) {
+                    if (!item.name.equals("Show Ticket")) {
+                        if (item.value > 0) {
+                            item.value = item.value - 1;
                         }
                     } else {
-                        items[i].value = items[i].value - items[i].value;
+                        item.value = 0;
                     }
                 } else {
-                    items[i].value = items[i].value + 1;
+                    item.value = item.value + 1;
                 }
             }
         }

@@ -39,3 +39,13 @@
 mv /Users/sftc/project/my-github/line83-4/4th_round_8f0d5e29ea48612ea1be0ab4537dc51f66d6610d/./src/test/java/store/StoreTest.test.received.txt /Users/sftc/project/my-github/line83-4/4th_round_8f0d5e29ea48612ea1be0ab4537dc51f66d6610d/./src/test/java/store/StoreTest.test.approved.txt
 ```
 如果后面代码的改动导致形成的KV文件与刚刚确认文件有所不同, 那当前代码的改动**也许**就是错误的
+
+### 小步重构
+看到 IDEA 提示代码中有一些警告
+> 展示当前上下文操作(Show Context Action): Command + 1
+
+可以看到 IDEA 给出几个方案解决这个警告, 无脑的选择吧
+然后运行一下刚刚执行过的测试用例
+> 运行当前上下文(Run Context): Control + R
+
+看到这次修改并没有影响代码运行的效果, OK, 安全的重构<br>
