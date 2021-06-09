@@ -48,4 +48,20 @@ mv /Users/sftc/project/my-github/line83-4/4th_round_8f0d5e29ea48612ea1be0ab4537d
 然后运行一下刚刚执行过的测试用例
 > 运行当前上下文(Run Context): Control + R
 
-看到这次修改并没有影响代码运行的效果, OK, 安全的重构<br>
+看到这次修改并没有影响代码运行的效果, OK, 安全的重构<br><br>
+
+对于当前的题目, 我的思路是以```Item```作为父类, 父类有```value```与```sellIn```两个属性, 
+有一个```updateValue```方法, ```Sulfuras```、```Aged Wine```、```Show Ticket``` 作为子类,
+重写```updateValue```方法.<br>
+我首先要做的就是把各个类型的商品逻辑拆开, 让代码变成下面这样
+``` java
+if (name.equalsTo("Sulfuras")) {
+    // do something
+} else if (name.equalsTo("Aged Wine")) {
+    // do something
+} else if (name.equalsTo("Show Ticket")) {
+    // do something
+} else {
+    // do something
+}
+```
