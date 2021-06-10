@@ -65,3 +65,9 @@ if (name.equalsTo("Sulfuras")) {
     // do something
 }
 ```
+
+按照上面的思路来, 要把代码搞成 if、else if、else 的结构
+> 提取方法(Extract Moth): Option + Command + M
+
+把核心逻辑提取到一个方法中, 随便命名一下, 再把代码格式调整到预期的格式<br>
+运行测试用例, 通过, 不错, 没有影响代码的运行效果, 虽然代码变的更烂了😂
