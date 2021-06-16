@@ -12,10 +12,6 @@ public class Sulfuras extends Item {
     
     @Override
     public void updateValue() {
-        if (sellIn < 0) {
-            if (value > 0) {
-                value = value - 1;
-            }
-        }
+        
     }
 }
