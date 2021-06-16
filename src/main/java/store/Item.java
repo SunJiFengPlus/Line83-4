@@ -21,6 +21,8 @@ public class Item {
             return new AgedWine(name, sellIn, value);
         } else if (name.equals("Show Ticket")) {
             return new ShowTicket(name, sellIn, value);
+        } else if (name.equals("Sulfuras")) {
+            return new Sulfuras(name, sellIn, value);
         }
         return new Item(name, sellIn, value);
     }
