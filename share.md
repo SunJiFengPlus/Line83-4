@@ -79,3 +79,4 @@ if (name.equalsTo("Sulfuras")) {
 运行测试用例, 测试通过<br>
 - 创建```AgedWine```子类, 并重写相关方法, 运行测试用例, 测试通过<br>
 - 替换```Store```中```AgedWine```的逻辑, 运行测试用例, 测试通过<br>
+- 创建```ShowTicket```子类, 并重写相关方法, 运行测试用例, 测试通过<br>
