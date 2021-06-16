@@ -19,7 +19,9 @@ public class Item {
     public static Item of(String name, int sellIn, int value) {
         if (name.equals("Aged Wine")) {
             return new AgedWine(name, sellIn, value);
-        } 
+        } else if (name.equals("Show Ticket")) {
+            return new ShowTicket(name, sellIn, value);
+        }
         return new Item(name, sellIn, value);
     }
 
