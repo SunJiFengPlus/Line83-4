@@ -21,12 +21,7 @@ public class Store {
             } else if (item.name.equals("Show Ticket")) {
                 item.updateValue();
             } else if (item.name.equals("Sulfuras")) {
-    
-                if (item.sellIn < 0) {
-                    if (item.value > 0) {
-                        item.value = item.value - 1;
-                    }
-                }
+                item.updateValue();
             } else {
                 if (item.value > 0) {
                     item.value = item.value - 1;
