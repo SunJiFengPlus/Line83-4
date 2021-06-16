@@ -8,7 +8,7 @@ public class StoreTest{
     public void test() {
         CombinationApprovals.verifyAllCombinations(
                 this::updateValue,
-                new String[]{"foo", "Aged Wine", "Show Ticket", "Sulfuras"},
+                new String[]{"foo", "Aged Wine", "Show Ticket", "Sulfuras", "Cure"},
                 new Integer[]{-1, 0, 1, 12, 11, 10},
                 new Integer[]{0, 1, 49, 50}
         );

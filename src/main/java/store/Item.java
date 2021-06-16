@@ -23,6 +23,8 @@ public class Item {
             return new ShowTicket(name, sellIn, value);
         } else if (name.equals("Sulfuras")) {
             return new Sulfuras(name, sellIn, value);
+        } else if (name.equals("Cure")) {
+            return new Cure(name, sellIn, value);
         }
         return new Item(name, sellIn, value);
     }
