@@ -83,3 +83,4 @@ if (name.equalsTo("Sulfuras")) {
 - 替换```Store```中```ShowTicket```的逻辑, 运行测试用例, 测试通过<br>
 - 创建```Sulfuras```子类, 并重写相关方法, 运行测试用例, 测试通过<br>
 - 替换```Store```中```Sulfuras```的逻辑, 运行测试用例, 测试通过<br>
+- 补充普通商品的逻辑, 运行测试用例, 测试通过<br>

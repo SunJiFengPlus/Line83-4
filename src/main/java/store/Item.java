@@ -33,6 +33,16 @@ public class Item {
     }
     
     public void updateValue() {
-        
+        if (value > 0) {
+            value = value - 1;
+        }
+    
+        sellIn = sellIn - 1;
+    
+        if (sellIn < 0) {
+            if (value > 0) {
+                value = value - 1;
+            }
+        }
     } 
 }
