@@ -1,5 +1,7 @@
 package store;
 
+import java.util.Arrays;
+
 // Please don't modify the class name.
 public class Store {
     Item[] items;
@@ -15,16 +17,6 @@ public class Store {
 
     // Please don't modify the signature of this method.
     public void updateValue() {
-        for (Item item : items) {
-            if (item.name.equals("Aged Wine")) {
-                item.updateValue();
-            } else if (item.name.equals("Show Ticket")) {
-                item.updateValue();
-            } else if (item.name.equals("Sulfuras")) {
-                item.updateValue();
-            } else {
-                item.updateValue();
-            }
-        }
+        Arrays.stream(items).forEach(Item::updateValue);
     }
 }
