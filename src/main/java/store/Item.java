@@ -16,6 +16,7 @@ public class Item {
         this.value = value;
     }
     
+    // Please don't modify the signature of this method.
     public static Item of(String name, int sellIn, int value) {
         return new Item(name, sellIn, value);
     }
